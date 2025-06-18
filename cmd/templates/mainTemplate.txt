@@ -1,0 +1,15 @@
+`package main
+
+import (
+    "fmt"
+    "os"
+    "github.com/pleone55/cli-core" as cli
+)
+
+func main() {
+    cli := cli.NewCli("` + projectName + `", "A new CLI tool")
+    if err := cli.Run(os.Args[1:]); err != nil {
+        fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+        os.Exit(1)
+    }
+}`

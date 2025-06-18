@@ -1,0 +1,5 @@
+`module ` + projectName + `go 1.24.4
+
+require github.com/pleone55/cli-core v1.0.0
+replace github.com/pleone55/cli-core => ../cli-core
+`
